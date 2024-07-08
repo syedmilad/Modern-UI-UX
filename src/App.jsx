@@ -1,22 +1,32 @@
-import { Billing,Testimonials, Business, CardDeal, Clients, CTA, Footer, Stats } from "./components";
-import style from "./style"
+import {
+  Billing,
+  Testimonials,
+  Business,
+  CardDeal,
+  Clients,
+  CTA,
+  Footer,
+  Stats,
+  Hero,
+  Navbar,
+} from "./components";
+import style from "./style";
 
 const App = () => {
-  return <div className="bg-primary w-full overflow-hidden">
-    <div className={`${style.paddingX} ${style.flexCenter}`}>
-        <div className={`${style.boxWidth}`}> 
-          Navbar
-        </div>
-    </div>
+  return (
+    <div className="bg-primary w-full overflow-hidden">
+      <div className={`${style.paddingX} ${style.flexCenter}`}>
+        <div className={`${style.boxWidth}`}><Navbar/></div>
+      </div>
 
-    <div className={`${style.paddingX} ${style.flexStart}`}>
-        <div className={`${style.boxWidth}`}> 
-        Hero
-        </div>
-    </div>
+      <div className={`${style.paddingX} ${style.flexStart}`}>
+        <div className={`${style.boxWidth}`}>
+          <Hero/>
+          </div>
+      </div>
 
-    <div className={`${style.paddingX} ${style.flexStart}`}>
-        <div className={`${style.paddingX} ${style.boxWidth}`}> 
+      <div className={`${style.paddingX} ${style.flexStart}`}>
+        <div className={`${style.paddingX} ${style.boxWidth}`}>
           <Stats></Stats>
           <Business></Business>
           <Billing></Billing>
@@ -26,10 +36,9 @@ const App = () => {
           <CTA></CTA>
           <Footer></Footer>
         </div>
+      </div>
     </div>
-
-
-  </div>;
+  );
 };
 
 export default App;
