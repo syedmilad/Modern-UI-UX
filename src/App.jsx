@@ -10,7 +10,6 @@ import {
   Hero,
   Navbar,
 } from "./components";
-import style from "./style";
 
 const App = () => {
   return (
